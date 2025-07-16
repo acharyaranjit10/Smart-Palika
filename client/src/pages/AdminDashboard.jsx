@@ -254,11 +254,11 @@ const handleStatusUpdate = async () => {
                 </div>
                 
                 <div>
-                  {selectedComplaint.image && (
+                  {selectedComplaint.imageUrl && (
                     <div className="mb-6">
                       <h3 className="text-lg font-semibold mb-2">Evidence</h3>
                       <img 
-                        src={selectedComplaint.image} 
+                        src={selectedComplaint.imageUrl} 
                         alt="Complaint evidence" 
                         className="rounded-lg border border-gray-200 max-h-48 w-full object-contain"
                       />

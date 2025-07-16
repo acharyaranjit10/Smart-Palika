@@ -46,7 +46,8 @@ const ComplaintTimeline = ({ statusHistory }) => {
       </div>
 
       {statusOrder.map((status, index) => {
-        const statusItem = statusHistory?.find(item => item.status === status);
+        const statusItemList = statusHistory?.filter(item => item.status === status);
+const statusItem = statusItemList?.[statusItemList.length - 1]; // last matching status update
         const isCompleted = index <= currentStatusIndex;
         const isCurrent = index === currentStatusIndex;
         
