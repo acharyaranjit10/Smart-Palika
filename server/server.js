@@ -25,9 +25,9 @@ app.use('/api/complaints', require('./routes/complaints'));
 app.use('/api/users', require('./routes/users')); // For future profile page
 
 // Root check
-app.get('/', (req, res) => {
-  res.send('Smart Palika backend is running 🚀');
-});
+// app.get('/', (req, res) => {
+//   res.send('Smart Palika backend is running 🚀');
+// });
 
 // Start server
 const PORT = process.env.PORT || 5000;
