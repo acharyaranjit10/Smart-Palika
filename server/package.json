@@ -9,6 +9,9 @@
     "dev": "nodemon server.js"
   },
   "keywords": [],
+  "engines": {
+  "node": ">=18 <21"
+},
   "author": "",
   "license": "ISC",
   "dependencies": {
